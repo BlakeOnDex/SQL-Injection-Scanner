@@ -19,7 +19,7 @@ def verif(url):
     url_test = url.replace("{fuzz}", "")
     req = requests.get(url.test)
     if req.elapsed.total_seconds > 6:
-        sys.exit(Style.BRIGHT + Fore.RED + "Please make sure you have a good connection to run the scammer")
+        sys.exit(Style.BRIGHT + Fore.RED + "Please make sure you have a good connection to run the scanner")
     else:
         fuzz(args.url, args.payloads)
 if not '{fuzz}' in args.url:
